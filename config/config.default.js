@@ -15,5 +15,11 @@ module.exports = appInfo => {
     defaultViewEngine: 'ejs',
     defaultExtension: '.ejs'
   };
+
+  config.security = {
+    xframe:{
+      enable:false
+    }
+  }
   return config;
 };
